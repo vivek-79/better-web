@@ -1,24 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Real Estate Website Assignment
 
-## Getting Started
+This is a web assignment where I developed four pages for a real estate website, including a Home page, About page, Mortgage Calculator, and Start page.
 
-First, run the development server:
+Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js – Framework for building the application
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+React Hook Form – Form handling for user inputs
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Framer Motion – Animations for smooth transitions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Vercel – Deployment platform
+
+Features
+
+Home Page – Landing page with an overview of the website.
+
+About Page – Provides information about the company.
+
+Mortgage Calculator – Calculates home loan payments based on loan amount, interest rate, and duration.
+
+Start Page – Initial page for user interaction.
+
+Deployment
+
+The project is deployed on Vercel. You can access it here: Deployment Link
 
 ## Learn More
 
