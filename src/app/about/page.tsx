@@ -28,7 +28,7 @@ export default function About() {
                 </h1>
 
                 <div className="mt-80 mb-6 flex flex-col sm:flex-row items-center max-w-5xl mx-auto gap-10">
-                    {/* Text Section */}
+         
                     <div className="md:w-1/2 text-left">
                         <h3 className="text-lg font-semibold">The status quo is broken</h3>
                         <p className="text-gray-600 mt-4 max-w-[270px] text-[9px]">
@@ -37,7 +37,7 @@ export default function About() {
                             to benefit insiders — not you. Better.com CEO, Vishal Garg, set out to change that.
                         </p>
                         <button className="mt-6 px-4 py-2 bg-green-800 text-white font-medium text-[9px] rounded hover:bg-green-800 transition">
-                            Read Vishal’s story
+                            Read Vishal&apos;s story
                         </button>
                     </div>
 

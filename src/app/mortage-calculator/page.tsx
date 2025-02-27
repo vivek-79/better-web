@@ -293,7 +293,7 @@ export default function MortgageCalculator() {
                                     </label>
                                     <div className='w-1/3 py-2 rounded-md border-2 hover:border-black self-end flex  h-full items-center justify-center gap-1 bg-white px-2'>
                                         <p>$</p>
-                                        <input type="number" placeholder='100' className="outline-none w-full sm:text-[9px]" />
+                                        <input type="number" {...field} placeholder='100' className="outline-none w-full sm:text-[9px]" />
                                     </div>
                                 </div>
                             )} />
@@ -306,7 +306,7 @@ export default function MortgageCalculator() {
                                     </label>
                                     <div className='w-1/3 py-2 rounded-md border-2 hover:border-black self-end flex  h-full items-center justify-center gap-1 bg-white px-2'>
                                         <p>$</p>
-                                        <input type="number" placeholder='100' className="outline-none w-full sm:text-[9px]" />
+                                        <input type="number" {...field} placeholder='100' className="outline-none w-full sm:text-[9px]" />
                                     </div>
                                 </div>
                             )} />
@@ -320,7 +320,7 @@ export default function MortgageCalculator() {
                                     </label>
                                     <div className='w-1/3 py-2 rounded-md border-2 hover:border-black self-end flex  h-full items-center justify-center gap-1 bg-white px-2'>
                                         <p>$</p>
-                                        <input type="number" placeholder='100' className="outline-none w-full sm:text-[9px]" />
+                                        <input type="number" {...field} placeholder='100' className="outline-none w-full sm:text-[9px]" />
                                     </div>
                                 </div>
                             )} />
@@ -350,7 +350,7 @@ export default function MortgageCalculator() {
                                         </label>
                                         <div className='w-1/3 py-2 rounded-md border-2 hover:border-black self-end flex  h-full items-center justify-center gap-1 bg-white px-2'>
                                             <p>$</p>
-                                            <input type="number" placeholder='100' className="outline-none w-full sm:text-[9px]" />
+                                            <input {...field} type="number" placeholder='100' className="outline-none w-full sm:text-[9px]" />
                                         </div>
                                     </div>
                                 )} />
@@ -362,7 +362,7 @@ export default function MortgageCalculator() {
                                         </label>
                                         <div className='w-1/3 py-2 rounded-md border-2 hover:border-black self-end flex  h-full items-center justify-center gap-1 bg-white px-2'>
                                             <p>$</p>
-                                            <input type="number" placeholder='100' className="outline-none w-full sm:text-[9px]" />
+                                            <input type="number" {...field} placeholder='100' className="outline-none w-full sm:text-[9px]" />
                                         </div>
                                     </div>
                                 )} />
@@ -374,7 +374,7 @@ export default function MortgageCalculator() {
                                         </label>
                                         <div className='w-1/3 py-2 rounded-md border-2 hover:border-black self-end flex  h-full items-center justify-center gap-1 bg-white px-2'>
                                             <p>$</p>
-                                            <input type="number" placeholder='100' className="outline-none w-full sm:text-[9px]" />
+                                            <input type="number" {...field} placeholder='100' className="outline-none w-full sm:text-[9px]" />
                                         </div>
                                     </div>
                                 )} />
@@ -416,19 +416,19 @@ export default function MortgageCalculator() {
                         <div className='mx-auto w-full max-w-sm  text-gray-500'>
                             <p className='sm:text-[9px] text-gray-500 mt-2 mb-2 center'>Formula for calculating your debt-to-income (DTI) ratio:</p>
                             <Image src="/dti-formula.jpg" alt='dti-formula' height={50} width={300} className='w-full max-w-[430px] mx-auto' />
-                            <p className='sm:text-[9px] text-gray-500 mt-2 mb-2 text-left'>Here’s an example of what calculating your DTI might look like:</p>
+                            <p className='sm:text-[9px] text-gray-500 mt-2 mb-2 text-left'>Here&apos;s an example of what calculating your DTI might look like:</p>
                             <Image src="/dti-example.jpg" alt='dti-example' height={50} width={200} className='w-full max-w-[430px] h-[280px]' />
                         </div>
                     </div>
 
                     <div>
                         <h2 className='font-semibold max-sm:text-[23px] mt-4 text-[#000]/70'>How to calculate monthly mortgage payments?</h2>
-                        <p className='sm:text-[9px] text-gray-500 mt-6 text-left'>Your monthly mortgage payment includes loan principal and interest, property taxes, homeowners insurance, and mortgage insurance (PMI), if applicable. While not typically included in your mortgage payment, homeowners also pay monthly utilities and sometimes pay homeowners association (HOA) fees, so it’s a good idea to factor these into your monthly budget. This mortgage calculator factors in all these typical monthly costs so you can really crunch the numbers.</p>
+                        <p className='sm:text-[9px] text-gray-500 mt-6 text-left'>Your monthly mortgage payment includes loan principal and interest, property taxes, homeowners insurance, and mortgage insurance (PMI), if applicable. While not typically included in your mortgage payment, homeowners also pay monthly utilities and sometimes pay homeowners association (HOA) fees, so it&apos;s a good idea to factor these into your monthly budget. This mortgage calculator factors in all these typical monthly costs so you can really crunch the numbers.</p>
                     </div>
                     <hr className='w-full h-[0.5px] bg-gray-400 mt-10 mb-6' />
                     <div>
                         <h2 className='font-semibold max-sm:text-[23px] text-[#000]/70'>Formula for calculating monthly mortgage payments</h2>
-                        <p className='sm:text-[9px] text-gray-500 mt-2 text-left'>The easiest way to calculate your mortgage payment is to use a calculator, but for the curious or mathematically inclined, here’s the formula for calculating principal and interest yourself:</p>
+                        <p className='sm:text-[9px] text-gray-500 mt-2 text-left'>The easiest way to calculate your mortgage payment is to use a calculator, but for the curious or mathematically inclined, here&apos;s the formula for calculating principal and interest yourself:</p>
                     </div>
 
                     <div className='w-full py-2'>
@@ -449,28 +449,28 @@ export default function MortgageCalculator() {
                                 <li>
                                     <strong>n</strong> is the total number of payments in months<br />
                                     For example:<br />
-                                    for a 30-year loan, n = 30×12 = 360 months<br />
+                                    for a 30-year loan, n = 30*12 = 360 months<br />
                                 </li>
                             </ul>
-                            <p className='sm:text-[9px] py-2'>Here’s a simple example:</p>
+                            <p className='sm:text-[9px] py-2'>Here&apos;s a simple example:</p>
                             <Image src="/monthly-example.jpg" alt='dti-example' height={50} width={200} className='w-full max-w-sm' />
                         </div>
-                        <p className='text-gray-500 sm:text-[9px] mt-4'>This formula assumes a fixed-rate mortgage, where the interest rate remains constant throughout the loan term. And remember, you’ll still need to add on taxes, insurance, utilities, and HOA fees if applicable.</p>
+                        <p className='text-gray-500 sm:text-[9px] mt-4'>This formula assumes a fixed-rate mortgage, where the interest rate remains constant throughout the loan term. And remember, you&apos;ll still need to add on taxes, insurance, utilities, and HOA fees if applicable.</p>
                         <hr className='w-full h-[0.5px] bg-gray-400 mt-8 mb-6' />
 
                         <div>
                             <h2 className='font-semibold max-sm:text-[23px] leading-7 text-[#000]/70 text-sm'>How to use this mortgage calculator?</h2>
                             <div className='sm:text-[9px] text-gray-500 mt-2 text-left flex flex-col gap-2'>
                                 <p className='mt-1'>Play around with different home prices, locations, down payments, interest rates, and mortgage lengths to see how they impact your monthly mortgage payments.</p>
-                                <p>Increasing your down payment and decreasing your interest rate and mortgage term length will make your monthly payment go down. Taxes, insurance, and HOA fees will vary by location. If you enter a down payment amount that’s less than 20% of the home price, private mortgage insurance (PMI) costs will be added to your monthly mortgage payment. As the costs of utilities can vary from county to county, we’ve included a utilities estimate that you can break down by service. If you’re thinking about buying a condo or into a community with a Homeowners Association (HOA), you can add HOA fees.</p>
-                                <p>The only amounts we haven’t included are the money you’ll need to save for annual home maintenance/repairs or the costs of home improvements. To see how much home you can afford including these costs, take a look at the Better home affordability calculator.</p>
+                                <p>Increasing your down payment and decreasing your interest rate and mortgage term length will make your monthly payment go down. Taxes, insurance, and HOA fees will vary by location. If you enter a down payment amount that&apos;s less than 20% of the home price, private mortgage insurance (PMI) costs will be added to your monthly mortgage payment. As the costs of utilities can vary from county to county, we&apos;ve included a utilities estimate that you can break down by service. If you&apos;re thinking about buying a condo or into a community with a Homeowners Association (HOA), you can add HOA fees.</p>
+                                <p>The only amounts we haven&apos;t included are the money you&apos;ll need to save for annual home maintenance/repairs or the costs of home improvements. To see how much home you can afford including these costs, take a look at the Better home affordability calculator.</p>
                                 <p>Fun fact: Property tax rates are extremely localized, so two homes of roughly the same size and quality on either side of a municipal border could have very different tax rates. Buying in an area with a lower property tax rate may make it easier for you to afford a higher-priced home.</p>
                             </div>
                         </div>
                         <div className='mt-4'>
                             <h2 className='font-semibold leading-7 max-sm:text-[23px] text-[#000]/70 text-sm'>Do you know your property tax rate?</h2>
                             <div className='sm:text-[9px] text-gray-500 mt-2 text-left flex flex-col gap-2'>
-                                <p className='mt-1'>While exact property tax rates vary by county, it can be helpful to look at taxes on the state level to get an idea for taxes in your state. Here’s a helpful chart from Forbes breaking down the Census Bureau’s 2021 American Community Survey 5-year estimate:</p>
+                                <p className='mt-1'>While exact property tax rates vary by county, it can be helpful to look at taxes on the state level to get an idea for taxes in your state. Here&apos;s a helpful chart from Forbes breaking down the Census Bureau 2021 American Community Survey 5-year estimate:</p>
                                 
                             </div>
                            
@@ -484,7 +484,7 @@ export default function MortgageCalculator() {
 
                     <hr className='w-full h-[0.5px] bg-gray-400 mt-6 mb-6' />
                     <section className='flex flex-col'>
-                        <h2 className='font-semibold max-sm:text-[23px] text-[#000]/70 '>How is Better’s mortgage calculator different?</h2>
+                        <h2 className='font-semibold max-sm:text-[23px] text-[#000]/70 '>How is Better mortgage calculator different?</h2>
 
                         <div>
                             <h3 className='sub mt-6'>This mortgage calculator shows your payments with taxes and insurance</h3>
@@ -515,9 +515,9 @@ export default function MortgageCalculator() {
                         <hr className='w-full h-[0.5px] bg-gray-400 mt-6 mb-6' />
                         <div>
                             <h3 className='font-semibold text-[#000]/70'>Next steps to buying a house</h3>
-                            <p className='small mt-6'>There are 8 steps to buying a house and by using this calculator you’ve completed step 2 (calculating your home affordability) and maybe even step 1 (getting your finances in order).</p>
-                            <p className='small mt-2'>The next step is getting pre-approved. A mortgage pre-approval with Better Mortgage takes as little as 3-minutes and doesn’t impact your credit score. It’s a free, no-commitment way to see how much home you can buy, the mortgages you qualify for, and the range of interest rates you’ll be offered.</p>
-                            <p className='small mt-2'>If you’re ready to buy a home now, our definitive home buying checklist can walk you through everything you need to know to get the home you want. With your Better Mortgage pre-approval letter in hand, you’ll be able to show sellers and real estate agents that you mean business—giving you an edge over homebuyers that don’t have this kind of proof that they’re financially ready to purchase. And by working with an agent from Better Real Estate and funding with Better Mortgage, you’ll save $2,000 on closing costs, and save up to $8,200 on average over the life of your loan.**</p>
+                            <p className='small mt-6'>There are 8 steps to buying a house and by using this calculator you completed step 2 (calculating your home affordability) and maybe even step 1 (getting your finances in order).</p>
+                            <p className='small mt-2'>The next step is getting pre-approved. A mortgage pre-approval with Better Mortgage takes as little as 3-minutes and does impact your credit score. It a free, no-commitment way to see how much home you can buy, the mortgages you qualify for, and the range of interest rates you be offered.</p>
+                            <p className='small mt-2'>If you&apos;re ready to buy a home now, our definitive home buying checklist can walk you through everything you need to know to get the home you want. With your Better Mortgage pre-approval letter in hand, you be able to show sellers and real estate agents that you mean business—giving you an edge over homebuyers that dont have this kind of proof that they financially ready to purchase. And by working with an agent from Better Real Estate and funding with Better Mortgage, you save $2,000 on closing costs, and save up to $8,200 on average over the life of your loan.**</p>
                         </div>
 
                         <hr className='w-full h-[0.5px] bg-gray-400 mt-6 mb-6' />
@@ -532,7 +532,7 @@ export default function MortgageCalculator() {
                         <div>
                             <p className='sm:text-[7px] text-[12px] text-gray-500 mt-6'>*See  <span className='text-[#4da871d2]'>Better Real Estate discount terms and conditions.</span><br />
 
-                                **The average lifetime savings estimate is based on a comparison of the Freddie Mac Primary Mortgage Market Survey’s (PMMS) 30-year fixed-rate mortgage product with Better Mortgage’s own offered rate for a comparable mortgage product between Jan ‘20 - Dec ‘20. PMMS is based on conventional, conforming fully-amortizing home purchase loans for borrowers with a loan-to-value of 80 percent and with excellent credit. Better Mortgage’s offered rate is based on pricing output for a 30-year fixed-rate mortgage product with a 30-day lock period for a single-family, owner-occupied residential property and a borrower with excellent (760 FICO) credit and a loan-to-value ratio of 80 percent. Individual savings could vary based on current market rates, property type, loan amount, loan-to-value, credit score, debt-to-income ratio and other variables.</p>
+                                **The average lifetime savings estimate is based on a comparison of the Freddie Mac Primary Mortgage Market Survey (PMMS) 30-year fixed-rate mortgage product with Better Mortgage own offered rate for a comparable mortgage product between Jan 20 - Dec 20. PMMS is based on conventional, conforming fully-amortizing home purchase loans for borrowers with a loan-to-value of 80 percent and with excellent credit. Better Mortgage offered rate is based on pricing output for a 30-year fixed-rate mortgage product with a 30-day lock period for a single-family, owner-occupied residential property and a borrower with excellent (760 FICO) credit and a loan-to-value ratio of 80 percent. Individual savings could vary based on current market rates, property type, loan amount, loan-to-value, credit score, debt-to-income ratio and other variables.</p>
 
                         </div>
                     </section>

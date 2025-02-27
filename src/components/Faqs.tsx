@@ -20,9 +20,9 @@ const Faqs = () => {
                         Got questions? <br /> We&apos;ve got answers
                     </h2>
                     <div className="flex gap-2">
-                        <Button handleClick={() => { setData(products) , setSelected(1) }} clicked ={selected==1} text="Our products"/>
-                        <Button handleClick={() => { setData(calculators), setSelected(2) }} clicked={selected == 2} text="Calculators"/>
-                        <Button handleClick={() => { setData(guides), setSelected(3) }} clicked={selected == 3} text="Guide & FAQs"/>
+                        <Button handleClick={() => { setData(products) ; setSelected(1) }} clicked ={selected==1} text="Our products"/>
+                        <Button handleClick={() => { setData(calculators); setSelected(2) }} clicked={selected == 2} text="Calculators"/>
+                        <Button handleClick={() => { setData(guides); setSelected(3) }} clicked={selected == 3} text="Guide & FAQs"/>
                     </div>
                 </div>
                 <div className="grid grid-cols-1  sm:grid-cols-3 gap-6">
