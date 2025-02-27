@@ -1,101 +1,63 @@
+
+"use client"
+import Faqs from "@/components/Faqs";
+import FloatingCard from "@/components/FloatingCard";
+import NavBar from "@/components/NavBar";
+import TestimonialsSection from "@/components/Testimonials";
 import Image from "next/image";
-
+import { useMotionValueEvent, useScroll } from 'motion/react'
+import { useRef, useState } from "react";
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+
+  const ref= useRef(null)
+  const [navBg, setNavBg] = useState("");
+  const { scrollYProgress } = useScroll({
+    target:ref,
+    offset: ["start end", "end start"]
+  })
+  useMotionValueEvent(scrollYProgress, 'change', (latest) => {
+    setNavBg(latest < 0.965 ? "bg-[#004733] text-white":"")
+  });
+  return (
+    <main className="relative w-full h-full">
+      <NavBar className={navBg} />
+    <div ref={ref} className="relative h-[85vh] sm:h-[500px] bg-[#004733] flex flex-col items-center justify-start sm:justify-center text-center text-white px-10 py-6">
+
+      <h1 className="text-5xl sm:text-6xl text-[#1EE07F] pt-4 sm:pt-12 font-bold z-10">Mortgages <br/> made simple</h1>
+        <div className="mx-auto h-full flex flex-col sm:flex-row justify-between w-full max-w-[500px] sm:text-[9px] pt-10">
+          <div className="flex flex-col z-50">
+            <button className=" mt-6 px-6 py-5 sm:py-3 bg-[#1EE07F] text-black font-semibold rounded-full hover:bg-green-400">
+              Start my approval
+            </button>
+            <p className="mt-2 self-center flex items-center space-x-2 text-gray-300">
+              <span>⏱ 3 min | No credit impact</span>
+            </p>
+          </div>
+          <div className="mt-8 w-fit flex flex-col items-center space-x-2 text-yellow-400 max-sm:bg-[#073126] z-[1] max-sm:mx-auto  rounded-md">
+            <span className="text-lg">G⭐️⭐️⭐️⭐️⭐️</span>
+            <span className="text-gray-300">4.6 Stars | 3177 Google reviews</span>
+          </div>
+          <div className="z-[9999] absolute">
+            <FloatingCard />
+          </div>
+      </div>
+      <div className="absolute bottom-0 flex items-center justify-center w-full">
+        <Image
+          src="/hero-variant-c.webp"
+          alt="Phone displaying mortgage approval"
+          width={300}
+          height={600}
+          className="rounded-lg"
+        />
+      </div>
     </div>
+    
+
+    <TestimonialsSection/>
+
+    <Faqs/>
+    </main>
   );
 }
