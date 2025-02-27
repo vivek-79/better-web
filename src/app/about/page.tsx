@@ -67,7 +67,7 @@ export default function About() {
 
             {/* Company Timeline Section */}
             <section className="w-full bg-green-800 text-white p-6 text-center">
-                <h2 className="text-2xl font-bold">How we're changing things</h2>
+                <h2 className="text-2xl font-bold">How we&apos;re changing things</h2>
                 <p className="text-sm mt-2">
                     Homeownership is tough and full of uncertainty. We&apos;re using technology to make it faster and more efficient.
                 </p>
