@@ -60,6 +60,7 @@ export default function MortgageCalculator() {
     const handleSliderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setValue("monthlyPayment", Number(e.target.value));
         setValue("homePrice", Number(e.target.value)*4)
+        setValue("downPayment",Number((monthlyPayment*0.5).toFixed(2)))
     };
 
     return (
