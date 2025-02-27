@@ -7,10 +7,7 @@ import { useForm, Controller } from 'react-hook-form';
 import { FaArrowUp } from 'react-icons/fa';
 import { FaArrowDownLong } from 'react-icons/fa6';
 
-interface HomePriceSliderProps {
-    value: number;
-    onChange: (value: number) => void;
-}
+
 export default function MortgageCalculator() {
 
 

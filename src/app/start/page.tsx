@@ -25,7 +25,7 @@ export default function Start() {
             </div>
 
             {/* Greeting Section */}
-            <h1 className="text-2xl font-semibold mt-4">Hi, I'm Betsy!</h1>
+            <h1 className="text-2xl font-semibold mt-4">Hi, I&apos;m Betsy!</h1>
             <p className="text-lg text-gray-700">What can I help you with?</p>
 
             {/* Options */}
@@ -55,7 +55,7 @@ export default function Start() {
 
             {/* Unlock Benefits */}
             <div className="mt-8 bg-gray-100 p-6 rounded-lg text-sm text-gray-700 max-w-md text-center">
-                <p className="mb-2">After a few questions, you'll unlock:</p>
+                <p className="mb-2">After a few questions, you&apos;ll unlock:</p>
                 <ul className="space-y-1">
                     <li>💡 Custom mortgage rates
                     </li>

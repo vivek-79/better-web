@@ -1,7 +1,7 @@
 
 "use client"
 import { navLeft, navLinks } from '@/constants'
-import { motion, useMotionValueEvent, useScroll } from 'motion/react'
+import { motion,} from 'motion/react'
 import Link from 'next/link'
 import { useState } from 'react'
 import { BsList } from 'react-icons/bs'

@@ -5,7 +5,6 @@ import Image from "next/image";
 import Button from "./Button";
 import { useState } from "react";
 import { calculators, guides, Products, products } from "@/constants";
-import { div } from "motion/react-client";
 
 
 const Faqs = () => {

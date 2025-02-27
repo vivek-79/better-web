@@ -2,15 +2,15 @@ import Image from 'next/image';
 
 
 const timelineData = [
-    { year: 2014, event: "After Vishal Garg's first attempt to purchase his own dream home, he quickly realized that the homebuying process is unnecessarily broken. This inspired him to found a technology-first company led by engineers and data experts with the mission of digitizing and automating home finance to make it cheaper, easier, and faster for all." },
+    { year: 2014, event: "After Vishal Garg first attempt to purchase his own dream home, he quickly realized that the homebuying process is unnecessarily broken. This inspired him to found a technology-first company led by engineers and data experts with the mission of digitizing and automating home finance to make it cheaper, easier, and faster for all." },
     { year: 2015, event: "Better Mortgage funds its first mortgage loan entirely online (without a single phone call!)." },
     { year: 2016, event: "Better Mortgage becomes a Fannie Mae approved seller + servicer and establishes relationships with top mortgage investors." },
     { year: 2017, event: "Better expands into the real estate market with Better Real Estate." },
     { year: 2018, event: "Better Mortgage partners with Ally Bank to build Ally powered by Better." },
     { year: 2019, event: "Better Mortgage launches its pilot partnership with American Express to deliver a seamless homebuying experience to AMEX customers." },
-    { year: 2021, event: "Better acquires Trussle — The UK's most innovative online mortgage broker." },
+    { year: 2021, event: "Better acquires Trussle — The UK most innovative online mortgage broker." },
     { year: 2022, event: "Better Mortgage becomes the first fintech to fund $100B home loans entirely online." },
-    { year: 2023, event: "Better Mortgage launches One Day Mortgage¹: The first offering to customers to go from application to full mortgage Commitment Letter within 24 hours vs. typical industry process of 30+ days." },
+    { year: 2023, event: "Better Mortgage launches One Day Mortgage: The first offering to customers to go from application to full mortgage Commitment Letter within 24 hours vs. typical industry process of 30+ days." },
     { year: 2024, event: "Newly added event based on uploaded file..." },
     { year: 'Today', event: "You become part of the story by joining tens of thousands of happy Better Mortgage borrowers.", buttonText: 'Get Started' },
 ];
@@ -24,7 +24,7 @@ export default function About() {
             <section className="bg-[#f9f8f6] w-full pt-72 px-6 text-center">
                 <h2 className="text-green-700 text-sm font-semibold">Our mission</h2>
                 <h1 className="text-2xl font-semibold max-w-3xl mx-auto mt-4">
-                    We’re making homeownership simpler, faster — and most importantly, more accessible for all Americans.
+                    We&apos;re making homeownership simpler, faster — and most importantly, more accessible for all Americans.
                 </h1>
 
                 <div className="mt-80 mb-6 flex flex-col sm:flex-row items-center max-w-5xl mx-auto gap-10">
@@ -32,8 +32,8 @@ export default function About() {
                     <div className="md:w-1/2 text-left">
                         <h3 className="text-lg font-semibold">The status quo is broken</h3>
                         <p className="text-gray-600 mt-4 max-w-[270px] text-[9px]">
-                            The traditional processes around homeownership are opaque and stressful. Fees aren’t transparent and some are simply
-                            outrageous in size. Traditional mortgage lending is rife with unnecessary fees and slow, painful processes. It’s a system set up
+                            The traditional processes around homeownership are opaque and stressful. Fees aren&apos;t transparent and some are simply
+                            outrageous in size. Traditional mortgage lending is rife with unnecessary fees and slow, painful processes. It&apos;s a system set up
                             to benefit insiders — not you. Better.com CEO, Vishal Garg, set out to change that.
                         </p>
                         <button className="mt-6 px-4 py-2 bg-green-800 text-white font-medium text-[9px] rounded hover:bg-green-800 transition">
@@ -69,7 +69,7 @@ export default function About() {
             <section className="w-full bg-green-800 text-white p-6 text-center">
                 <h2 className="text-2xl font-bold">How we're changing things</h2>
                 <p className="text-sm mt-2">
-                    Homeownership is tough and full of uncertainty. We’re using technology to make it faster and more efficient.
+                    Homeownership is tough and full of uncertainty. We&apos;re using technology to make it faster and more efficient.
                 </p>
             </section>
             <div className="max-w-4xl mx-auto p-4">
