@@ -408,7 +408,7 @@ export default function MortgageCalculator() {
                     <div>
                         <h2 className='font-semibold max-sm:text-[23px] text-[#000]/70'>How much monthly mortgage payment can I afford?</h2>
                         <p className='sm:text-[9px] text-gray-500 mt-6 text-left'>Lenders determine how much you can afford on a monthly housing payment by calculating your debt-to-income ratio (DTI). The maximum DTI you can have in order to qualify for most mortgage loans is often between 45-50%, with your anticipated housing costs included.</p>
-                        <p className='sm:text-[9px] text-gray-500 mt-2 text-left'>Your DTI is the balance between your income and your debt. It helps lenders understand how safe or risky it is for them to approve your loan. A DTI ratio represents how much of your gross monthly income is spoken for by creditors, and how much of it is left over to you as disposable income. It’s most commonly written as a percentage. For example, if you pay half your monthly income in debt payments, you would have a DTI of 50%.</p>
+                        <p className='sm:text-[9px] text-gray-500 mt-2 text-left'>Your DTI is the balance between your income and your debt. It helps lenders understand how safe or risky it is for them to approve your loan. A DTI ratio represents how much of your gross monthly income is spoken for by creditors, and how much of it is left over to you as disposable income. It&apos;s most commonly written as a percentage. For example, if you pay half your monthly income in debt payments, you would have a DTI of 50%.</p>
                     </div>
 
                     <div className=' w-full py-2'>
